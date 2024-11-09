@@ -17,67 +17,79 @@
         h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" /> -->
+
 </head>
 
 <body>
   <header>
-    <span class="material-symbols-outlined">menu</span>
-    <span class="material-symbols-outlined">close</span>
+    <div class="overlay">
+      <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="hu" id="h-u">
+        <li><a href="#about">about me</a></li>
+        <li><a href="#skill">skill</a></li>
+        <li><a href="#production">production</a></li>
+      </ul>
+    </div>
     <p class="first">
       Welcome♬
     </p>
-    <div class="sp-menu">
-      <span class="material-icons" id="open">menu</span>
-    </div>
-    <ul>
-      <li><a href="#about">about me</a></li>
-      <li><a href="#skill">skill</a></li>
-      <li><a href="#production">production</a></li>
-    </ul>
+    <img src="名称未設定のデザイン.png" class="third">
+    <img src="名称未設定のデザイン.png" class="fourth">
+    <img src="名称未設定のデザイン.png" class="fifth">
   </header>
   <main>
     <div class="picture1">
       <img src="240_F_738710877_G1cqPpyT3Xn4tUGsMjP3q1AToDbWw0XE.jpg" class="one">
-      <img src="名称未設定のデザイン.png" class="third">
     </div>
     <h1 id="about">about me</h1>
     <div class="container">
       <div class="contaner">
         <div class="front">
-          <img src="グレー ブラック ホワイト スタイリッシュ 美容室 ショップカード 名刺横.png">
+          <img src="グレー ブラック ホワイト スタイリッシュ 美容室 ショップカード 名刺横.png裏.png">
         </div>
         <div class="back">
-          <img src="グレー ブラック ホワイト スタイリッシュ 美容室 ショップカード 名刺横.png裏.png">
+          <img src="グレー ブラック ホワイト スタイリッシュ 美容室 ショップカード 名刺横.png">
         </div>
       </div>
     </div>
     <div>
       <h2 id="skill">skill</h2>
       <div class="skills">
-        <img src="240_F_442293592_WxCUQSh0IrHcTnMeRrArQTtO1GM6loUF.jpg" class="second">
-        <div class="html">HTML...90%</div>
+        <img src="240_F_523177094_Q8HHf3AUhuTQSmm4HJzF2dTVDdDfDr1C.jpg" class="second">
+        <div class="graphs">
+          <div class="graph"></div>
+        </div>
       </div>
       <div class="skills">
-        <img src="240_F_442293592_WxCUQSh0IrHcTnMeRrArQTtO1GM6loUF.jpg" class="second">
-        <div class="html">CSS...85%</div>
+        <img src="240_F_821992764_ubVQhS1JrFrXyr86DQIQEDXXuu2lJMr2.jpg" class="second">
+        <div class="graphs">
+          <div class="graph"></div>
+        </div>
       </div>
       <div class="skills">
-        <img src="240_F_442293592_WxCUQSh0IrHcTnMeRrArQTtO1GM6loUF.jpg" class="second">
-        <div class="html">JavaScript...50%</div>
+        <img src="240_F_1002309859_wvzB8iiVO6lSUDWAGDQpBelMBYygQp0N.jpg" class="second">
+        <div class="graphs">
+          <div class="graph"></div>
+        </div>
       </div>
       <div class="skills">
-        <img src="240_F_442293592_WxCUQSh0IrHcTnMeRrArQTtO1GM6loUF.jpg" class="second">
-        <div class="html">GitHub...40%</div>
+        <img src="GitHub.jpg" class="second">
+        <div class="graphs">
+          <div class="graph"></div>
+        </div>
       </div>
     </div>
     <h3 id="production">production</h3>
     <div class="productionall">
       <div class="productions">
+        <!-- <a
+          href="file:///C:/Users/kokoro/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/8.23%20%E8%AA%B2%E9%A1%8C/index.html"> -->
         <a
-          href="file:///C:/Users/kokoro/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/8.23%20%E8%AA%B2%E9%A1%8C/index.html">
+          href="file:///c%3A/Users/kokoro/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA/8.23%20%E8%AA%B2%E9%A1%8C/index.html">
           <img src="240_F_590443225_Bgkl8j2xoMjVwAuiseBXHbTgWNjKCinY.jpg">
         </a>
         <div class="choices">
@@ -107,12 +119,13 @@
   </main>
   <footer>
     <a href="https://docs.google.com/forms/d/139doIW9XjQuBLHHAVgDlKFCszzT6_bScuYpXOnNNNpg/edit" class="inquiry">
-      <button>
+      <button class="end">
         <div class="inquiry">お問い合わせ</div>
       </button>
     </a>
     </button>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
