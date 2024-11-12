@@ -18,64 +18,44 @@ header{
   font-size: 16px;
 }
 
-.first{
-  height: 600px;
-  width: 100%;
-  opacity: 0.6;
-}
+
 
 .container{
-  position: relative;
+  background-image: url(DAE3084A-8596-49B9-86D5-5E1973210875.jpg);
+  height: 70vh;
+  background-size: cover;
+  width: 100%;
 }
 
 h2{
   font-weight: 24px;
   font-size: 28px;
+  line-height: 70vh;
 }
 
 img{
   object-fit: cover;
 }
 
-/* .square{
-  background-color: rgba(252, 231, 163, 0.687);
-  width: 384px;
-  height: 72px;
-  border-radius: 30px;
-  position: absolute;
-  top:100px;
-  right: 10%;
-  padding: 24px;
-} */
-
 .square{
-  position: relative;
-  margin: 2em 0 2em 40px;
   padding: 8px 15px;
   background: burlywood;
   border-radius: 30px;
   width: 520px;
+  margin: 0 auto;
 }
 
 .square:before{
   font-family: FontAwesome;
   content: "\f111";
-  position: absolute;
   font-size: 16px;
-  left: -40px;
-  bottom: 0;
-  top: 40px;
   color: antiquewhite;
 }
 
 .square:after{
   font-family: FontAwesome;
   content: "\f111";
-  position: absolute;
   font-size: 32px;
-  left: -23px;
-  top: 16px;
-  bottom: 0;
   color: rgb(255, 202, 132);
 }
 
