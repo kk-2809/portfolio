@@ -54,7 +54,7 @@ header ul {
 
 .hu.active {
   opacity: 1;
-  background-color: rgba(247, 99, 0, 0.45);
+  background-color: rgba(175, 50, 1, 0.45);
 }
 
 
@@ -132,62 +132,109 @@ header ul {
 }
 
 
-.title {
+ /* .title {
   display: flex;
   overflow: hidden;
-  color: #aa8f7b;
-  /* font-family: 'Josefin Sans', sans-serif; */
+  color: #ff8b32; */
 }
 
-.title span {
+/* .title span {
   display: block;
-  transform: translate(0, 105%);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  font-size: 106px;
+} */
+
+
+.title {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.title.-visible span {
-  transform: translate(0, 0);
+.animate {
+  font-size: 80px;
+  color: #dc782b;
 }
 
-.title span:nth-child(2) {
-  transition-delay: 0.06s;
+.animate span {
+  display: inline-block;
 }
-.title span:nth-child(3) {
-  transition-delay: 0.12s;
+
+.animate span:nth-of-type(2) {
+  animation-delay: .05s;
 }
-.title span:nth-child(4) {
-  transition-delay: 0.18s;
+
+.animate span:nth-of-type(3) {
+  animation-delay: .1s;
 }
-.title span:nth-child(5) {
-  transition-delay: 0.24s;
+
+.animate span:nth-of-type(4) {
+  animation-delay: .15s;
 }
-.title span:nth-child(6) {
-  transition-delay: 0.30s;
+
+.animate span:nth-of-type(5) {
+  animation-delay: .2s;
 }
-.title span:nth-child(7) {
-  transition-delay: 0.36s;
+
+.animate span:nth-of-type(6) {
+  animation-delay: .25s;
 }
-.title span:nth-child(8) {
-  transition-delay: 0.42s;
+
+.animate span:nth-of-type(7) {
+  animation-delay: .3s;
 }
-.title span:nth-child(9) {
-  transition-delay: 0.48s;
+
+.animate span:nth-of-type(8) {
+  animation-delay: .35s;
 }
-.title span:nth-child(10) {
-  transition-delay: 0.54s;
+
+.animate span:nth-of-type(9) {
+  animation-delay: .4s;
 }
-.title span:nth-child(11) {
-  transition-delay: 0.6s;
+
+.animate span:nth-of-type(10) {
+  animation-delay: .45s;
 }
-.title span:nth-child(12) {
-  transition-delay: 0.66s;
+
+.animate span:nth-of-type(11) {
+  animation-delay: .5s;
 }
-.title span:nth-child(13) {
-  transition-delay: 0.72s;
+
+.animate span:nth-of-type(12) {
+  animation-delay: .55s;
 }
-.title span:nth-child(14) {
-  transition-delay: 0.78s;
+
+.top-wrapper-txt span {
+  opacity: 0;
+  transform: translate(-150px, 0) scale(.3);
+  animation: leftRight .5s forwards;
 }
+
+
+@keyframes leftRight {
+  40% {
+    transform: translate(50px, 0) scale(.8);
+    opacity: 1;
+    color: #fff;
+  }
+
+  60% {
+    color: #fff;
+  }
+
+  80% {
+    transform: translate(0) scale(3);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
+}
+
+
 
 .bird {
   position: absolute;
@@ -352,6 +399,7 @@ header ul {
   0% {
     transform: rotate(30deg);
   }
+
   2% {
     transform: rotate(110deg);
   }
@@ -607,6 +655,7 @@ h2 {
   left: 72px;
   top: 32px;
   background-color: antiquewhite;
+  overflow: hidden;
 }
 
 .graphs .graph1 {
@@ -622,6 +671,16 @@ h2 {
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
+  animation: graphAnim 1.5s forwards;
+}
+
+@keyframes graphAnim {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .graphs .graph2 {
@@ -637,6 +696,16 @@ h2 {
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
+  animation: graphAnim 1.5s forwards;
+}
+
+@keyframes graphAnim {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .graphs .graph3 {
@@ -652,6 +721,16 @@ h2 {
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
+  animation: graphAnim 1.5s forwards;
+}
+
+@keyframes graphAnim {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .graphs .graph4 {
@@ -667,6 +746,16 @@ h2 {
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
+  animation: graphAnim 1.5s forwards;
+}
+
+@keyframes graphAnim {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .ratio {
@@ -823,7 +912,7 @@ h3 {
 /* footer */
 
 footer {
-  padding: 64px 0;
+  padding: 300px 0;
   background-color: rgba(168, 104, 16, 0.508);
 }
 

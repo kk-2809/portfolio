@@ -8,13 +8,18 @@
 }
 
 {
+  const ham = document.querySelector('#js-hamburger');
+  const Ul = document.getElementById('clact');
   const currentActive = document.querySelectorAll('#menu');
-    currentActive.addEventListener('click',e => {
-      e.preventDefault();
-      if (currentActive.classList.contains('active') == true) {
-        currentActive.classList.remove('active');
+  currentActive.forEach(entry => {
+    entry.addEventListener('click', () => {
+      if (Ul.classList.contains('active') == true) {
+        Ul.classList.remove('active');
+        ham.classList.remove('active');
       } return;
     });
+  });
+
 }
 
 
@@ -30,4 +35,29 @@
       $target.removeClass(CLASSNAME);
     }, TIMEOUT);
   }, TIMEOUT * 2);
+}
+
+
+// graph
+{
+  const objects = document.querySelectorAll('.scroll-in');
+  const cb = function (entries, observer) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('displayed');
+        observer.unobserve(entry.target);
+      };
+    });
+  }
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0
+  }
+
+  const io = new IntersectionObserver(cb, options);
+  objects.forEach(object => {
+    io.observe(object);
+  });
 }
