@@ -482,6 +482,51 @@ header ul {
   }
 }
 
+.cloud-1{
+  width: 240px;
+  height: 240px;
+  bottom: 640px;
+  white-space: nowrap;
+}
+
+.cloud-2{
+  width: 240px;
+  height: 240px;
+  bottom: 640px;
+  left: 240px;
+  white-space: nowrap;
+}
+
+.cloud-3{
+  width: 240px;
+  height: 240px;
+  bottom: 640px;
+  right: 320px;
+  white-space: nowrap;
+}
+
+.cloudall{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.clouds{
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+
+@keyframes scroll{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
 .third {
   width: 160px;
   height: 160px;
@@ -656,20 +701,23 @@ h2 {
   top: 0;
   bottom: 0;
   background: rgb(202, 120, 5);
-  width: 80%;
+  /* width: 80%; */
   border-radius: 0 4px 4px 0;
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
+}
+
+.graph.app{
   animation: graphAnim 1.5s forwards;
 }
 
 @keyframes graphAnim {
   0% {
-    transform: translateX(-100%);
+    width: 0;
   }
   100% {
-    transform: translateX(0);
+    width: 100%;
   }
 }
 
@@ -686,17 +734,8 @@ h2 {
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
-  animation: graphAnim 1.5s forwards;
 }
 
-@keyframes graphAnim {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
 .graphs .graph3 {
   height: 34px;
@@ -711,17 +750,8 @@ h2 {
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
-  animation: graphAnim 1.5s forwards;
 }
 
-@keyframes graphAnim {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
 .graphs .graph4 {
   height: 34px;
@@ -736,16 +766,6 @@ h2 {
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
-  animation: graphAnim 1.5s forwards;
-}
-
-@keyframes graphAnim {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 
 .ratio {
@@ -756,28 +776,6 @@ h2 {
   color: rgb(130, 130, 130);
 }
 
-
-.graphs1.appear{
-  opacity: 1;
-  transform: none;
-}
-
-
-#to_top{
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  opacity: 0;
-}
-
-#to_top i{
-   font-size: 32px;
-   color: aqua;
-}
-
-#to_top.scrolled{
-  opacity: 1;
-}
 
 
 h3 {
@@ -807,7 +805,7 @@ h3 {
   width: 100%;
   color: #cf520e;
   font-size: 24px;
-  padding: 64px 0;
+  padding: 64px 0 64px 0;
 }
 
 .productions2 {
@@ -820,16 +818,16 @@ h3 {
 }
 
 .choices {
-  margin: 64px 120px 0 0;
+  margin: 0 80px 0 0;
 }
 
 .choices2 {
-  margin: 64px 0 0 160px;
+  margin: 0 0 0 80px;
 }
 
 .box {
   position: relative;
-  padding: 1rem;
+  padding: 4rem;
   border-radius: 10px;
   border: 1px solid #ffc5ac;
   background-color: antiquewhite;
@@ -867,7 +865,8 @@ h3 {
 
 .box2 {
   position: relative;
-  padding: 1rem;
+  padding: 4rem;
+  width: 400px;
   border-radius: 10px;
   border: 1px solid #ffc5ac;
   background-color: antiquewhite;
@@ -925,9 +924,11 @@ h3 {
 /* footer */
 
 footer {
-  padding: 300px 0;
+  padding: 300px 0 0 0;
   background-color: rgba(168, 104, 16, 0.508);
 }
+
+
 
 .inquiry {
   color: white;
@@ -951,4 +952,67 @@ footer {
 .end:hover {
   transform: translateY(5px);
   box-shadow: 0 0 0 #7d1703;
+}
+
+.end poyopoyo{
+  animation: poyopoyo 2s ease-out infinite;
+  opacity: 1;
+}
+
+@keyframes poyopoyo {
+  0%, 40%, 60%, 80%{
+    transform: scale(1.0);
+  }
+  50%, 70%{
+    transform: scale(0.95);
+  }
+}
+
+.korokoro{
+  width: 160px;
+  height: 160px;
+  margin-right: 1200px;
+  animation: korokoro 10s linear 0s ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes korokoro {
+  0%   { transform: translate(0%, 0%); }
+  5%   { transform: translate(10%, 0%) rotate(10deg); }
+  25%  { transform: translate(20%, 0%) rotate(20deg); }
+  30%  { transform: translate(-10%, 0%) rotate(-10deg); }
+  35%  { transform: translate(-15%, 0%) rotate(-15deg); }
+  45%  { transform: translate(10%, 0%) rotate(10deg); }
+  50%  { transform: translate(20%, 0%) rotate(20deg); }
+  60%  { transform: translate(-10%, 0%) rotate(-10deg); }
+  65%  { transform: translate(-15%, 0%) rotate(-15deg); }
+  75%  { transform: translate(0%, 0%) rotate(0deg); }
+  100% { transform: translate(0%, 0%) rotate(0deg); }
+}
+
+.footprints{
+  width: 80px;
+  height: 80px;
+  padding: 0 0 0 900px;
+  animation: walk 6s steps(5) infinite;
+}
+
+@keyframes walk{
+  to{
+    transform: translate(200px, -200px);
+  }
+}
+
+.footprints2{
+  width: 80px;
+  height: 80px;
+  padding: 0 0 0 800px;
+  animation: walk2 6s steps(5) infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes walk2{
+  to{
+    transform: translate(200px, -200px);
+  }
 }
