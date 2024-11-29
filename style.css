@@ -43,20 +43,25 @@ header a:hover {
 }
 
 header ul {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
   flex-flow: column;
   padding-top: 32px;
-  opacity: 0;
+  display: none;
   transition: opacity .5s;
+  z-index: -10000;
 }
 
 .hu.active {
-  opacity: 1;
+  display: block;
   background-color: rgba(175, 50, 1, 0.45);
+  z-index: 1000;
 }
-
 
 
 /* main */
@@ -128,7 +133,7 @@ header ul {
   position: fixed;
   top: 16px;
   right: 16px;
-  z-index: 1000;
+  z-index: 1200;
 }
 
 
@@ -620,21 +625,25 @@ header ul {
   width: 70%;
 }
 
-.front {
+.front img {
   position: absolute;
   top: 0;
   transition: transform 2s, z-index 2s;
   transform: rotateY(-180deg);
   backface-visibility: hidden;
   display: block;
+  object-fit: cover;
+  z-index: 1000;
 }
 
-.back {
+.back img {
   position: absolute;
   top: 0;
   transition: transform 2s, z-index 2s;
   backface-visibility: hidden;
   display: block;
+  object-fit: cover;
+  z-index: 1000;
 }
 
 .front img {
@@ -708,8 +717,12 @@ h2 {
   margin-top: 56px;
 }
 
-.graph.app{
+.graph1.app{
   animation: graphAnim 1.5s forwards;
+}
+
+.graph2.app{
+  animation: graphAnim2 1.5s forwards;
 }
 
 @keyframes graphAnim {
@@ -717,9 +730,19 @@ h2 {
     width: 0;
   }
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
+
+@keyframes graphAnim2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
 
 .graphs .graph2 {
   height: 34px;
