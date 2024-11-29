@@ -710,7 +710,6 @@ h2 {
   top: 0;
   bottom: 0;
   background: rgb(202, 120, 5);
-  /* width: 80%; */
   border-radius: 0 4px 4px 0;
   margin-right: auto;
   margin: 0;
@@ -721,10 +720,6 @@ h2 {
   animation: graphAnim 1.5s forwards;
 }
 
-.graph2.app{
-  animation: graphAnim2 1.5s forwards;
-}
-
 @keyframes graphAnim {
   0% {
     width: 0;
@@ -732,6 +727,24 @@ h2 {
   100% {
     width: 80%;
   }
+}
+
+.graphs .graph2 {
+  height: 34px;
+  position: absolute;
+  left: 0;
+  right: 16px;
+  top: 0;
+  bottom: 0;
+  background: rgb(202, 120, 5);
+  border-radius: 0 4px 4px 0;
+  margin-right: auto;
+  margin: 0;
+  margin-top: 56px;
+}
+
+.graph2.app{
+  animation: graphAnim2 1.5s forwards;
 }
 
 @keyframes graphAnim2 {
@@ -744,21 +757,6 @@ h2 {
 }
 
 
-.graphs .graph2 {
-  height: 34px;
-  position: absolute;
-  left: 0;
-  right: 16px;
-  top: 0;
-  bottom: 0;
-  background: rgb(202, 120, 5);
-  width: 70%;
-  border-radius: 0 4px 4px 0;
-  margin-right: auto;
-  margin: 0;
-  margin-top: 56px;
-}
-
 
 .graphs .graph3 {
   height: 34px;
@@ -768,11 +766,23 @@ h2 {
   top: 0;
   bottom: 0;
   background: rgb(202, 120, 5);
-  width: 30%;
   border-radius: 0 4px 4px 0;
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
+}
+
+.graph3.app{
+  animation: graphAnim3 1.5s forwards;
+}
+
+@keyframes graphAnim3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
 }
 
 
@@ -784,11 +794,24 @@ h2 {
   top: 0;
   bottom: 0;
   background: rgb(202, 120, 5);
-  width: 40%;
   border-radius: 0 4px 4px 0;
   margin-right: auto;
   margin: 0;
   margin-top: 56px;
+}
+
+.graph4.app{
+  animation: graphAnim4 1.5s forwards;
+}
+
+
+@keyframes graphAnim4 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
 }
 
 .ratio {
@@ -798,8 +821,6 @@ h2 {
   font-size: 32px;
   color: rgb(130, 130, 130);
 }
-
-
 
 h3 {
   text-align: center;
