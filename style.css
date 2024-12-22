@@ -519,16 +519,16 @@ header ul {
 
 .clouds{
   display: flex;
-  animation: scroll 10s linear infinite;
+  animation: scroll 25s linear infinite;
 }
 
 
 @keyframes scroll{
   0%{
-    transform: translateX(-100%);
+    transform: translateX(-1500px);
   }
   100%{
-    transform: translateX(0);
+    transform: translateX(1500px);
   }
 }
 
@@ -980,11 +980,10 @@ h3 {
 /* footer */
 
 footer {
-  padding: 240px 0 0 0;
   background-color: rgba(168, 104, 16, 0.508);
+  position: relative;
+  height: 100vh;
 }
-
-
 
 .inquiry {
   color: white;
@@ -993,7 +992,6 @@ footer {
 }
 
 .end {
-  display: flex;
   color: white;
   background-color: rgba(168, 104, 16, 0.508);
   border: 8px;
@@ -1003,6 +1001,7 @@ footer {
   border-radius: 16px;
   box-shadow: 0 5px 0 #7d1703;
   transition: .3s;
+  margin-top: 500px;
 }
 
 .end:hover {
@@ -1031,7 +1030,6 @@ footer {
 .bicycle {
   width: 160px;
   position: absolute;
-  top: 160px;
   bottom: 0;
   left: 360px;
 }
@@ -1070,8 +1068,9 @@ footer {
 .tree{
   width: 360px;
   height: 360px;
-  position: relative;
-  right: 400px;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
 }
 
 .korokoro{
@@ -1079,8 +1078,7 @@ footer {
   height: 160px;
   animation: korokoro 10s linear 0s ;
   animation-iteration-count: infinite;
-  position: relative;
-  top: 160px;
+  position: absolute;
   bottom: 0;
   right: 760px;
 }
@@ -1102,7 +1100,9 @@ footer {
 .footprints{
   width: 80px;
   height: 80px;
-  padding: 0 0 0 900px;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
   animation: walk 6s steps(5) infinite;
 }
 
@@ -1115,7 +1115,7 @@ footer {
 .footprints2{
   width: 80px;
   height: 80px;
-  padding: 0 0 0 800px;
+  position: absolute;
   animation: walk2 6s steps(5) infinite;
   animation-delay: 0.6s;
 }
